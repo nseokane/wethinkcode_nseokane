@@ -2,4 +2,4 @@
 clear
 
 find . ! -name '*.sh'
-sleep 2
+sleep 2adas
