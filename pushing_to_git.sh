@@ -8,11 +8,8 @@ git status
 sleep 3
 echo "commit description?"
 read -p 'description:' description
-git commit -m '$description'
+some = "$decription"
+git commit -m some
 git status
 sleep 3
-echo "do you want to push to your repository? y/n"
-read -p '[y/n]:' response
-if ["$response" = "y"] then
-    git push origin master
-fi
+git push origin master
