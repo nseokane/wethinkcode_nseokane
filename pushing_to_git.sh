@@ -8,8 +8,7 @@ git status
 sleep 3
 echo "commit description?"
 read -p 'description:' description
-some = "$decription"
-git commit -m some
+git commit -m "$decription"
 git status
 sleep 3
 git push origin master
