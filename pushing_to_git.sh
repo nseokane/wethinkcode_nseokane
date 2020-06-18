@@ -12,4 +12,4 @@ read -p 'description:' description
 git commit -m "$description"
 git status
 
-git push origin master
+git push -u origin master
