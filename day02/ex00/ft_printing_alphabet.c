@@ -3,7 +3,6 @@
 void ft_putchar(char a)
 {
     write(1, &a, 1);
-    write(1, "\n", 2);
 }
 
 int ft_print_alphabet()
@@ -15,5 +14,6 @@ int ft_print_alphabet()
         letter++;
     }
 
+    write(1, "\n", 2);
     return 0;
 }
