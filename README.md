@@ -1,2 +1,2 @@
 # wethinkcode_nseokane
-wethinkcode stuff
+wethinkcode exercesise
