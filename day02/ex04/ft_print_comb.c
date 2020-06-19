@@ -13,7 +13,6 @@
 #include <stdio.h>
 void ft_putchar(){}
 
-
 void ft_combine(char a, char b, char c){
 	printf("%d%d%d\n", a, b, c);
 	// write(1, num, 4);
