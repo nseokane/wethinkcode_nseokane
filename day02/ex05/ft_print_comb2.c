@@ -10,13 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
-#include <stdio.h>
-void ft_putchar(){}
 
+void ft_putchar(int a, int b, int c, int d){
+	char a_char = '0' + a;
+	char b_char = '0' + b;
+	char c_char = '0' + c;
+	char d_char = '0' + d;
 
-void ft_combine(char a, char b, char c, char d){
-	printf("%d%d %d%d. ", a, b, c, d);
-	// write(1, num, 4);
+	char arr1[] = {a_char, b_char};
+	char arr2[] = {c_char, d_char};
+
+	write(1, arr1, sizeof arr1);
+	write(1, " ", 1);
+	write(1, arr2, sizeof arr2);
+	write(1, ", ", 2);
 }
 
 void ft_print_comb(void){
@@ -34,7 +41,7 @@ void ft_print_comb(void){
 				int d;
 				d = c;
 				while (d <= 9){
-					ft_combine(a, b, c, d);
+					ft_putchar(a, b, c, d);
 					d++;
 				}
 				c++;
