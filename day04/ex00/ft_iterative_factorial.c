@@ -12,7 +12,7 @@
 
 #include <unistd.h>
 
-int ft_recursive_factorial(int nb){
+int ft_iterative_factorial(int nb){
     int i = 1, fact = 1;
     while (i <= nb) {
         fact = fact * i;
