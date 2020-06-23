@@ -10,22 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int p_square_check(int num){
-    int i = 1;
-
-    while ((i * i) <= num){
-        if ((num % i == 0) && (num / i == i)){
-            return 1;
-        }
-        i++;
-    }
-    return 0;
-}
-
 int ft_sqrt(int nb) {
-    int i = 1, x = nb, z = 1;
+    int i = 1, x = nb, z = 1, yes;
 
-    if (p_square_check(nb)){
+    while ((z * z) <= nb){
+        if ((nb % z == 0) && (nb / z == z)){
+            yes = 1;
+        }
+        z++;
+    }
+
+    if (yes == 1){
         while (x > i){
             x = (x + i) / 2;
             i = nb / x;
