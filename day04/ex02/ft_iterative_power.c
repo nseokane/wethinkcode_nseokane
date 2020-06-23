@@ -17,5 +17,4 @@ int ft_iterative_power(int nb, int power){
         --power;
     }
     return number;
-    
 }
