@@ -1,28 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nseokane <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 12:54:14 by nseokane          #+#    #+#             */
+/*   Updated: 2020/06/23 12:54:16 by nseokane         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<stdio.h> 
 
 int ft_fibonacci(int index){
-   
-  int i = 2, a = 0, b = 1, c; 
-
+  int i = 2, x = 0, y = 1, z; 
   if( index == 0){
-    return a; 
-  }
-
-
-
-  for (i = 2; i <= index; i++) { 
-      c = a + b; 
-      a = b; 
-      b = c; 
+    return x;
+  }else{
+    while (i <= index){
+      z = x + y; 
+      x = y; 
+      y = z;
+      i++;
+    }
+    return y;
   } 
-
-  return b; 
-} 
-  
-int main () 
-{ 
-  int n = 9; 
-  printf("%d",  ft_fibonacci(n)); 
-  getchar(); 
-  return 0; 
-} 
+}
